@@ -2,37 +2,37 @@
 <html>
 <head>
     <title>SCC Ticketing System</title>
-    <style>
-        body {
-            font-family: Arial;
-            background: #f4f4f4;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            margin-bottom: 50px;
-        }
-        .button {
-            display: inline-block;
-            padding: 15px 30px;
-            margin: 20px;
-            font-size: 18px;
-            color: #fff;
-            background: #333;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .button:hover {
-            background: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="ticketing.css">
 </head>
 <body>
-    <h1>🎓 SCC Registrar Ticketing System</h1>
+
+<header> 
+    <h1>🎓 St. Cecilia’s College – Castillejos, Inc.</h1>
+
+    <nav class="header-nav">
+        <a href="about.php">About</a>
+    </nav>
+</header>
+
+<main class="content">
+
+    <h2>Welcome to SCC Registrar Ticketing System</h2>
+
+    <p>
+        St. Cecilia’s College is a Catholic school dedicated to the formation of students
+        grounded in Christian values, academic excellence, leadership, and service.
+        Guided by faith and integrity, SCC continues to nurture individuals to become
+        responsible and globally competitive citizens.
+    </p>
 
     <a href="login.php" class="button">Login</a>
     <a href="register.php" class="button">Register</a>
+
+</main>
+
+<footer>
+    <p>&copy; <?php echo date("Y"); ?> St. Cecilia’s College – Castillejos, Inc.</p>
+</footer>
+
 </body>
 </html>

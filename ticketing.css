@@ -1,0 +1,344 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: pink;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 15px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: gray;
+    color: #fff;
+    padding: 15px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: gray;
+    color: #fff;
+    padding: 10px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* ===== FORM ===== */
+form {
+    background: #fff;
+    padding: 20px;
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select, textarea, button {
+    width: 90%;
+    padding: 10px;
+    margin: 6px 0;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #555;
+}
+
+.delete-btn {
+    background: red;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* ===== TABLE ===== */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background: #fff;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* ===== MESSAGES ===== */
+.msg {
+    font-weight: bold;
+    color: green;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+.logout {
+    color: #fff;
+    font-weight: bold;
+}
+body {
+    background: white !important;
+}
+/* HOME BUTTONS */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 18px;
+    color: #fff;
+    background: #333;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #555;
+}
+
+main {
+    padding: 60px;
+}
+/* Header styling */
+header {
+    display: flex;
+    justify-content: center; /* Title sa left, nav sa right */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: gray; /* optional background */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.header-nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main content styling */
+.content {
+    text-align: center; /* I-center lahat ng nasa main content */
+    padding: 40px 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50; /* green button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2f2;
+    margin-top: 20px;
+     background-color: gray; /* optional background */
+}
+/* --- General Styling --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color:gray;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Main content */
+.content {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+    color: black;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+ul.values {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul.values li {
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 20px 0;
+    background-color:gray;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: gray;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+}
+/* Dashboard layout */
+.dashboard {
+    display: flex;          /* Flex container */
+    min-height: calc(100vh - 120px); /* Adjust for header/footer */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: gray;
+    color: white;
+    padding: 20px 0;
+    flex-shrink: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+    background-color: red;
+    border-left: 4px solid red;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;               /* Kunin ang natitirang space */
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .sidebar a {
+        flex: 1;
+        text-align: center;
+        margin: 0;
+        border-left: none;
+    }
+}
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-pic img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #004080;
+}
+
+.profile-details p {
+    margin: 8px 0;
+    font-size: 1.05em;
+}
