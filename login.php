@@ -8,25 +8,29 @@ if (isset($_POST['login'])) {
     $id_number = trim($_POST['id_number']);
     $password  = $_POST['password'];
 
-    $stmt = $conn->prepare("SELECT * FROM user WHERE id_number = ?");
+    $stmt = $conn->prepare("
+        SELECT student_user_id, full_name, password, role
+        FROM user
+        WHERE id_number = ?
+    ");
     $stmt->execute([$id_number]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($user && password_verify($password, $user['password'])) {
-        // Set session
         $_SESSION['user_id']   = $user['student_user_id'];
         $_SESSION['full_name'] = $user['full_name'];
-        $_SESSION['role']      = $user['role'];
+        $_SESSION['role']      = strtolower(trim($user['role'])); // normalize
 
         // Redirect based on role
-        if ($user['role'] == 'Admin') {
-            header("Location: admindashboard.php");
+        if ($_SESSION['role'] === 'admin') {
+                header("Location: admindashboard.php");
         } else {
-            header("Location: landingpage.php");
-        }
+                header("Location: landingpage.php");
         exit();
+        }
+
     } else {
-        $msg = "❌ Invalid ID Number or password!";
+        $msg = "❌ Invalid ID Number or Password!";
     }
 }
 ?>
@@ -46,7 +50,7 @@ if (isset($_POST['login'])) {
 <h2>Login</h2>
 
 <?php if ($msg): ?>
-    <p class="error"><?php echo $msg; ?></p>
+    <p class="error"><?php echo htmlspecialchars($msg); ?></p>
 <?php endif; ?>
 
 <form method="POST">
